@@ -2,7 +2,7 @@
 /* eslint react-hooks/exhaustive-deps:off */
 
 import React, { useEffect, useState } from "react";
-import Colorfulmessage from "./components/ColorfulMessage";
+import { ColorfulMessage } from "./components/ColorfulMessage";
 
 const App = () => {
   console.log("App");
@@ -34,8 +34,8 @@ const App = () => {
   return (
     <>
       <h1 style={{ color: "red" }}>こんにちは</h1>
-      <Colorfulmessage color="orange">お元気ですか！</Colorfulmessage>
-      {/* <Colorfulmessage color="pink">お元気ですか2！</Colorfulmessage> */}
+      <ColorfulMessage color="orange">お元気ですか！</ColorfulMessage>
+      {/* <ColorfulMessage color="pink">お元気ですか2！</ColorfulMessage> */}
       <button onClick={onClickCountUp}>ボタン</button>
       <br />
       <button onClick={onClickSwitchShow}>on/off</button>
